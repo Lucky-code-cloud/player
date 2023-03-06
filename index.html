@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackplay</title>
+    <link rel="stylesheet" href="./fonts/css/all.css">
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <button class="hdbtn">
+                <i class="fa-solid fa-arrow-left fa-8x"></i>
+            </button>
+            <h3 class="p-now">Playing now</h3>
+            <button class="hdbtn">
+                <i class="fa-solid fa-list fa-8x"></i>
+            </button>
+        </header>
+
+        <div class="player">
+            <div class="img-area">
+                <img src="./assets/img/black2 .png" width="200vw" alt="">
+            </div>
+
+            <div class="song-details">
+                <h1 class="name">Dont Shoot</h1>
+                <h3 class="artist">CHE BLVCK</h3>
+            </div>
+
+            <div class="audioC">
+                <div class="song-timer">
+                    <span class="current-time">0:00</span>
+                    <span class="max-duration">0:00</span>
+                </div>
+                <div class="progress-area">
+                    <div class="progress-bar">
+                        <audio id="main-audio" src="./assets/aud/Dontshoot.mp3"></audio>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button class="btnC" id="prev">
+                    <i class="fa-solid fa-step-backward fa-2x"></i>
+                </button>
+                <button class="play-pause">
+                    <i class="fa-solid fa-play fa-3x"></i>
+                </button>
+                <button class="btnC" id="next">
+                    <i class="fa-solid fa-step-forward fa-2x"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/music-list.js"></script>
+    <script src="./js.js"></script>
+</body>
+</html>
